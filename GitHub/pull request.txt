@@ -1,0 +1,17 @@
+fork : you make a copy from anther remote diretory that you don´t have permission to change
+
+pull request: you are working in this copy, now you have finished so you want do send your
+changes to principal project. You make a pull request from user own this project.
+
+commands  to check 
+git fectch git@user
+git fectch sgosta
+
+git diff git@user/master
+
+===========================================
+AMAZINGGGGGGGGG GIt graph
+===========================================
+when you make a merge from pull request you can see the commits
+graphical by commnad
+git log --graph
