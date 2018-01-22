@@ -17,5 +17,6 @@ in the directory of user has the file called .gitconfig in this file we can crea
 	sergiolog = log --pretty='%an Realizou o commit %h: %s'
 	full2 = log -p
 	co = checkout
+	graph - log --graph
 	publish = !git checkout master && git pull && git checkout dev && git rebase master && git checkout master && git merge dev && git push
 	
