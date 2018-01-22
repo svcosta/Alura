@@ -1,0 +1,30 @@
+git checkout -b newBranch
+
+if you changed a file so you regrest and you want to undo,
+you can type the command so go back the code:
+
+git checkout file.html
+
+with this command you are able to undo the changes.
+
+but if you exectued the commed add?
+
+in this case the checkout won't work because you has added. the file is index status.
+
+how do I do so?
+you have to change the status of the file
+
+git reset HEAD home.html
+
+
+if you has commited?
+git reset idHashCommit
+the files will have the status changed
+
+reverse
+you can changes things that has been done.
+git revert idHashcommit
+
+git reset --hard HEAD~1 
+Usando esse comando, descartamos definitivamente as mudanças feitas no último commit.
+

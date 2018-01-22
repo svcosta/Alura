@@ -1,0 +1,11 @@
+Bisect
+you can search what commit was good and what commit was base
+
+git bisect start
+git bisect bad HEAD (the lastest commit)
+git bisect good 2482ce1e4a29aa313273e1b8756596bdeb839a2f
+git bisect bad #hashIdCommit2
+git bisect good #hashIdCommit
+
+so the command bisec will found what commit the changes has done.
+

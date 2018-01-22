@@ -1,0 +1,7 @@
+--lista de ferreamentas de merge
+git mergetool --tool-help
+
+--para insalater vc pode usar o comando
+git mergetool -t nome_do_programa.
+
+git mergetool -t emerge

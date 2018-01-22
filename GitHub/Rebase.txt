@@ -1,0 +1,9 @@
+O objetivo do comando git rebase é fazer com que a branch em que se está tenha um novo HEAD, 
+"copiado" de outra branch. Ou seja, a base da branch, a partir da qual você vai realizar seus commits, 
+deverá ser modificada. Para isso, caso haja commits novos na branch que terá a base trocada, o Git os 
+coloca em um local temporário e em seguida começa a aplicar a nova base. Após a atualização do HEAD, 
+o Git começa a aplicar seus commits sobre a nova base.
+
+Vale ressaltar que se você criou dois commits na branch testeRebase, depois um na master e então 
+mais um na testeRebase, a ordem em que eles aparecerão no git log é exatamente esta, pois os commits
+ são reaplicados na ordem em que foram criados, baseado no horário do commit.

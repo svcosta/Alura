@@ -1,0 +1,67 @@
+Git branch
+to see all brachs in the diretory
+
+git branch NOME_BRANCH
+git branch ticket30333
+
+git ls
+list all file in the diretory
+
+git log
+to see the history
+
+to change branch
+git checkout name_BRANCH 
+git checkout ticket30333
+
+
+subindo a brach
+git pull -u origin ticket3033
+when I put -u the git will create the branch identical my local repository.
+
+
+git branch 
+show the branch in my machine
+
+git branch -r
+show the branchs in the reposity remote.
+
+
+Get the new branch on the remote directory
+git pull
+
+you will should create a new repository in your local repository with a reference to 
+the new branch on server repository
+
+git branch -t myNewBranch origin/myNewBranch
+-t menas the reference.
+
+git branc ticket3055 -d
+to delete the branch
+
+git branch ticket3055 -D 
+the code above force the command delte.
+
+git branch newBracn -b
+the command above create a new branch and set as current branch.
+
+
+git push -u origin design
+Ao digitar o comando git push -u origin design, criamos a branch remota design no repositório referente
+ ao origin e criamos uma ligação entre a nossa branch e a branch remota.
+
+git branch -a
+Esta opção mostra todas as branches, locais e remotas!
+
+
+SINCRONAR BRANCH LOCAL E ROMOTA
+Uma sequência de tarefas bem comum referente à cópia de uma branch localizada num repositório remoto é:
+
+Criação de uma branch local com o mesmo nome da branch remota
+Mudança para essa nova branch criada
+Criação de link entre a branch local e remota
+
+Com o comando git checkout -t origin/design, todo esse trabalho é feito automaticamente para a branch chamada design.
+
+git fetch origin
+Este comando verifica todas as atualizações que foram realizadas no repositório de atalho origin.

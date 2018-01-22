@@ -1,0 +1,7 @@
+for to update a branch you use the command git rebate
+
+git rebase origin yourBranch
+git rebase master ticket3055
+
+git checkout -b desenvolvimento. Nesse momento, a branch atual é trocada para a que acabamos de criar, ou seja, não está mais na branch master.
+

@@ -1,0 +1,69 @@
+
+commandos do git.
+
+git diff v0.1 v0.2
+
+git blema css/index.css
+
+git clone
+
+password:
+Sergio@32
+=======================================
+-- Comando Clone
+=======================================
+git clone (URL do diretorio)
+git clone https://github.com/jcfonsecagit/repositorio.git
+
+git clone https://github.com/scostagit/site.git
+
+===========================================
+git tag: to see the version of the project.
+==========================================
+
+git checkout v0.1
+to change the version of code.
+
+git branch: with this command you will be able to see what branch you are in.
+
+
+
+Git init:
+you can create the reposity, apart from this, your folder becomes
+the verson controls, all files in this folder will be verion.
+
+Git ls-files
+you can see all files that are version in git.
+
+Git Status:
+you can see the status of files in git.
+untracket: the file is not in the version.
+
+git add 
+you put the file on control version.
+
+git commit 
+you changes the file and save on repository
+
+
+for send ours changes to server:
+git add
+git commit
+
+how do I send all files in my reposoty
+
+git add path of directory
+git add *
+
+git add -i
+to execute commands
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+$(document).delegate("#scroll-top","click",function(a){$("html,body").animate({scrollTop:0},"slow"),$(".icon-search").click(),a.preventDefault()});

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://cursos.alura.com.br/course/git/task/512 -->
+<html lang="pt-BR" data-product="alura"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Git: Aula 7 - Atividade 1 Controle avançado de alterações | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/nr-1071.min.js.transferir"></script><script type="text/javascript" async="" src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.transferir"></script><script async="" id="cio-tracker" data-site-id="fccd7e3d49531457b6b2" src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/track.js.transferir"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/phrase.1c137164.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/taskContent.82d3b42f.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body>
+
+<section class="task menu--inactive" data-task-type="video" data-task-id="512" data-author-id="46497" data-course-code="git" data-section-number="7" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button openMenu-button--inactive"></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Vídeo">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<small>01</small>
+					<span class="task-body-header-title-text"> Controle avançado de alterações</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/git/task/512/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+
+	
+	
+	
+	
+		
+
+
+
+
+
+
+	
+	
+		<section class="video" id="task-content">
+			<div class="container">
+				
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+					<li class="settings-box-item settings-box-item-player">
+						<button class="video-changePlayer" data-uri="https://player.vimeo.com/video/107944660">
+							Mudar o Player
+							<span hidden="">indisponível</span>
+						</button>
+					</li>
+					
+						
+							
+							
+								<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/git/512/question">Sugerir Melhoria</a></li>
+							
+						
+					
+				
+				
+			
+			
+		</ul>
+	</div>
+</div>
+				
+
+
+
+<section id="video" class="video-container">
+    
+    <div id="video-container-data" class="" data-section-id="87" data-course="git" data-playback-rate="1.2" data-task-id="512" data-quality="hd" data-course-id="13" data-gnarus-name="alura">
+
+        
+    <div poster="/images/video/vinheta-alura.png" preload="auto" class="video-js vjs-default-skin video-player-frame video-player vjs-controls-enabled vjs-has-started vjs-user-inactive vjs-paused vjs-ended" id="video-player-frame" style="width: 300px; height: 150px;"><video id="video-player-frame_html5_api" class="vjs-tech" preload="auto" poster="/images/video/vinheta-alura.png" src="https://player.vimeo.com/play/679029296?s=107944660_1516538349_dd5f39e0122a4a24dca584e8795a3d4d&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=git%2B-%2Bcap07174.mp4"><source type="video/mp4" src="https://player.vimeo.com/play/679029296?s=107944660_1516538349_dd5f39e0122a4a24dca584e8795a3d4d&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=git%2B-%2Bcap07174.mp4" data-res="hd"><source type="video/mp4" src="https://player.vimeo.com/play/679029295?s=107944660_1516538349_e2284a38a96a0783c1636f313cb7d15e&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=git%2B-%2Bcap07164.mp4" data-res="sd"></video><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(&quot;/images/video/vinheta-alura.png&quot;);"></div><div class="vjs-loading-spinner"></div><div class="vjs-text-track-display vjs-hidden"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control  vjs-paused" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time</span> 14:31</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 14:31</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="14:31"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress" style="width: 99.78%;"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 99.55%;"><span class="vjs-control-text">14:31</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Non-Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">2x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">1.5x</li><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">1.2x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">1x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">0.8x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">0.7x</li></ul></div></div><div class="vjs-playback-rate-value">1.2x</div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div><div class="vjs-HD-button vjs-control" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content">HD</div></div></div><div class="vjs-error-display"><div></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden"><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><div class="vjs-fg-color vjs-tracksetting"><label class="vjs-label">Foreground</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Opaque</option></select></span></div><div class="vjs-bg-color vjs-tracksetting"><label class="vjs-label">Background</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div><div class="window-color vjs-tracksetting"><label class="vjs-label">Window</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label">Font Size</label><select><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00" selected="">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label">Text Edge Style</label><select><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label">Font Family</label><select><option value="">Default</option><option value="monospaceSerif">Monospace Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div>
+</section>
+				
+					<h2 class="video-transcription-title">Transcrição</h2>
+					<section id="transcription" class="video-transcription transcription-toggle">
+						<div class="formattedText">
+								<h1>Descartando alterações indesejadas</h1>
+
+<p>Durante o desenvolvimento em um projeto, é comum realizar alterações no projeto que não são mais necessárias ou que gerem bugs cuja solução não é imediata. E muitas vezes desejamos descartar as alterações do arquivo, retornando para uma versão anterior. Por exemplo, se alteramos o nome de um arquivo junto com todas as suas referências, mas o nome não ficou bom, como podemos deixar o sistema como era antes? Uma solução seria olhar como o arquivo estava numa versão para alterar o nosso arquivo. Para resolver essa tarefa, o Git nos fornece ferramentas que permitem reverter alterações nos arquivos em seus três possíveis estados: Working Directory, Index e Head.</p>
+<h1>Descartando alterações no Working Directory: git checkout</h1>
+
+<p>Vamos continuar trabalhando com o repositório "propostas_homepage", onde tratamos os conflitos. A versão atual do nosso arquivo "proposta_1.html" é:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Proposta um para homepage da empresa</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Cabeçalho do sistema</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      Isso aqui é o conteúdo da página
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Copyright - Caelum 2012</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>O usuário "jcfonsecagit" decide alterar página, porém, por acidente, ele troca a "/" por "\" na Tag <code>&lt;/div&gt;</code>. O arquivo alterado ficou:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Proposta um para homepage da empresa</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Cabeçalho do sistema</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      Isso aqui é o conteúdo da página
+    &lt;\div&gt;
+
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Copyright - Caelum 2012</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Ao visualizar a página, o usuário "jcfonsecagit" percebeu que há um bug no sistema, mas ele não consegue encontrar onde está localizado o erro. Ao verificar o estado do sistema com o comando <code>git status</code>, ele verifica que só o arquivo "proposta_1.html" foi modificado e as alterações ainda estão no "Working Directory". Então, ele decide descartar todas as alterações que foram realizadas desde o último commit, isto é, voltar o seu sistema para o estado em que se encontra no HEAD. Uma opção seria verificar as alterações que foram feitas com o comando <code>git diff</code> e desfazer as alterações manualmente. Mas e se muita coisa foi alterada dentro de um arquivo? Para este problema, o Git nos possibilita descartar todas as alterações que estão no "Working Directory" de um determinado arquivo. Para isso, utilizamos o comando <code>git checkout</code> passando o nome do arquivo cujas alterações serão removidas. No nosso caso, temos:</p>
+<pre class="prettyprint"><code><span class="pln">git checkout proposta_1</span><span class="pun">.</span><span class="pln">html</span></code></pre>
+<p>A saída não devolve nada mas, ao realizar o comando <code>git status</code>, verificamos que não há mais alterações no arquivo "proposta_1.html" que estejam no "Working Directory".</p>
+<p>Note que já utilizamos o comando <code>git checkout</code> antes para alternar entre as branches do repositório. A diferença entre os dois é o argumento que passamos para o comando: se for o nome de uma branch, trocaremos de branch; mas se for o nome de um arquivo, deixaremos o arquivo conforme ele se encontra no HEAD da branch atual.</p>
+<p>Vimos que é uma boa prática desenvolver uma tarefa numa branch diferente da branch master, deixando-a apenas para sincronização com o repositório remoto. Então, o usuário "jcfonsecagit" criou a branch "desenvolvimento" e mudou para ela com o comando <code>git checkout -b desenvolvimento</code>.</p>
+<p>Enquanto isso, a usuária "mmsoaresgit" atualizou o repositório remoto modificando o arquivo "proposta_1.html". Ao realizar o <code>git pull</code> na branch master, o usuário "jcfonsecagit" recebeu a atualização que a "mmsoaresgit" realizou. Agora, ele deseja utilizar a versão apenas do arquivo "proposta_1.html" que se encontra na branch master, deixando o resto dos arquivos intactos. Uma solução seria olhar o arquivo na branch master e copiar o seu conteúdo para a branch desenvolvimento. Contudo, o Git já nos permite fazer tal operação de uma maneira mais simples: basta passar ao comando <code>git checkout</code> o nome da branch e o do arquivo que se deseja copiar. No nosso caso, temos:</p>
+<pre class="prettyprint"><code><span class="pln">git checkout master proposta_1</span><span class="pun">.</span><span class="pln">html</span></code></pre>
+<p>Esse comando trará o arquivo "proposta_1.html" como ele se encontra na branch "master" e o adicionará ao Index do repositório na branch "desenvolvimento", pronto para um commit.</p>
+<h1>Descartando alterações no Index: git reset</h1>
+
+<p>Agora, imagine que o usuário "jcfonsecagit" renomeou o nome do arquivo "proposta_1.html" e todas as suas referências nos outros arquivos a fim de melhorar a legibilidade do projeto. Em seguida, ele adicionou as alterações ao Index para realizar o commit. Contudo, ele percebe que o novo nome deixou o sistema mais confuso e deseja retornar o projeto como ele se encontra no HEAD. Se a alteração estivesse no Working Directory, poderíamos descartá-la com o comando <code>git checkout</code>. Mas isso não funciona se a alteração estiver no Index. Para isso, precisamos dizer ao Git que desejamos redefinir (reset) o nosso arquivo de acordo com a versão encontrada no HEAD: </p>
+<p><code>git reset HEAD proposta_1.html</code></p>
+<p>Com isso, obtemos a seguinte saída:</p>
+<pre class="prettyprint"><code><span class="typ">Unstaged</span><span class="pln"> changes after reset</span><span class="pun">:</span><span class="pln">
+M    proposta_1</span><span class="pun">.</span><span class="pln">html</span></code></pre>
+<p>Essa mensagem está indicando que o estado do arquivo "proposta_1.html" foi alterado. Verificado-o com o comando <code>git status</code>, vemos que o arquivo está no estado Working Directory. Agora já podemos descartar as alterações do arquivo com o comando <code>git checkout proposta_1.html</code>.</p>
+<h1>Guardando alterações para mais tarde: git stash</h1>
+
+<p>Considere o caso em que "jcfonsecagit" realizou o seguinte commit alterando o arquivo "proposta_1.html":</p>
+<pre class="prettyprint"><code><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Proposta um para homepage da empresa</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Cabeçalho do sistema</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      Isso aqui é o conteúdo da página
+    &lt;\div&gt;
+
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Copyright - Caelum 2012</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Em seguida, ele começa a modificar o arquivo para resolver uma outra tarefa. Contudo, ele descobre que o seu commit anterior apresentava um bug e deseja resolvê-lo antes de terminar a sua tarefa. Mas as suas alterações que estão no Working Directory e no Index ainda não são suficientes para a realização de um commit. Ele pode descartar as suas modificações com os comandos que vimos anteriormente mas, dessa maneira, ele terá que refazer tudo quando for reiniciar a tarefa. Para resolver isso, o Git nos permite guardar as alterações nesses dois estados em uma área especial, de onde podemos recuperá-los depois. Isso é feito com o comando <code>git stash</code>. Ao realizar este comando, obtemos como saída:</p>
+<pre class="prettyprint"><code><span class="typ">Saved</span><span class="pln"> working directory </span><span class="kwd">and</span><span class="pln"> index state WIP on desenvolvimento</span><span class="pun">:</span><span class="pln"> b6c7cc8 trocando de </span><span class="lit">1</span><span class="pln"> para I </span><span class="kwd">no</span><span class="pln"> title
+HEAD </span><span class="kwd">is</span><span class="pln"> now at b6c7cc8 trocando de </span><span class="lit">1</span><span class="pln"> para I </span><span class="kwd">no</span><span class="pln"> title</span></code></pre>
+<p>A mensagem acima está indicando que as alterações em nosso Working Directory e Index foram salvas em uma área distinta e que o nosso repositório foi restaurado de acordo com o HEAD.</p>
+<p>Agora, "jcfonsecagit" consegue corrigir o bug que encontrou. O arquivo corrigido fica:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Proposta um para homepage da empresa</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Cabeçalho do sistema</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      Isso aqui é o conteúdo da página
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Copyright - Caelum 2012</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Em seguida, ele realiza um commit indicando que corrigiu o bug: <code>git commit -m "Corrigindo bug na tag html"</code>. Agora ele já pode retornar para a tarefa que estava executando anteriormente. Porém, como recuperar as alterações que foram salvas anteriormente? Isso é feito com o comando <code>git stash pop</code>. O retorno fica:</p>
+<pre class="prettyprint"><code><span class="com"># On branch desenvolvimento</span><span class="pln">
+</span><span class="com"># Changes not staged for commit:</span><span class="pln">
+</span><span class="com">#   (use "git add &lt;file&gt;..." to update what will be committed)</span><span class="pln">
+</span><span class="com">#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    modified:   proposta_1.html</span><span class="pln">
+</span><span class="kwd">no</span><span class="pln"> changes added to commit </span><span class="pun">(</span><span class="kwd">use</span><span class="pln"> </span><span class="str">"git add"</span><span class="pln"> </span><span class="kwd">and</span><span class="pun">/</span><span class="kwd">or</span><span class="pln"> </span><span class="str">"git commit -a"</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Dropped</span><span class="pln"> refs</span><span class="pun">/</span><span class="pln">stash@</span><span class="pun">{</span><span class="lit">0</span><span class="pun">}</span><span class="pln"> </span><span class="pun">(</span><span class="lit">0efeaa547ad59405a3b764334129e08b5846b935</span><span class="pun">)</span></code></pre>
+<p>Assim, todo o trabalho inicial da tarefa que fora salvo retorna ao nosso sistema no estado de Working Directory.</p>
+<p>E se a gente quiser saber se há algum estado salvo via <code>git stash</code>? Isso pode ser feito listando todos os stashes salvos no momento com o comando <code>git stash list</code>. Cada um dos estados salvo é nomeado da seguinte maneira: "WIP on [nome_do_branch]: [hash] [mensagem_do_commit_head]". Também há uma referência ao stash com stash@{0} por exemplo, para o último stash criado. Caso houvessem outros, as referências seriam stash@{1}, stash@{2} e assim por diante.</p>
+<p>O comando <code>git stash pop</code> utiliza como padrão o último stash criado. Para aplicar alterações de um stash mais antigo, usamos sua referência:</p>
+<p><code>git stash pop stash@{1}</code></p>
+<h1>Descartando commits indesejados</h1>
+
+<p>Enquanto as modificações indesejadas ainda estão em nosso Working Directory ou no Index, a operação de descartá-las ou desfazê-las é simples. Mas o que acontece se já foi realizado o commit com as alterações que desejamos remover? Vamos ver um exemplo em que isso acontece.</p>
+<p>Imagine novamente que "jcfonsecagit" alterou o arquivo "proposta_1.html" trocando "/" por "\ " na Tag div:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Proposta um para homepage da empresa</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Cabeçalho do sistema</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div&gt;</span><span class="pln">
+      Isso aqui é o conteúdo da página
+    &lt;\div&gt;
+
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Copyright - Caelum 2012</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Em seguida, ele realizou o commit: <code>git commit -am "Alterando a tag div"</code>. Mas, ao ver a página, "jcfonsecagit" percebeu que a página contém um erro e deseja desfazer as alterações do seu último commit.</p>
+<p>Semelhante ao caso em que as alterações estavam no Index, precisamos indicar ao Git que desejamos redefenir o arquivo. Contudo, não podemos mais usar o HEAD como referência. No lugar dele, devemos usar o penúltimo HEAD como referência. Para isso, podemos utilizar o hash correspondente ao penúltimo commit. Para encontrar o hash, usamos o comando <code>git log</code>:</p>
+<pre class="prettyprint"><code><span class="pln">commit </span><span class="lit">23923a7a8059bc37c15fe4331af862eb15ceee89</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Jo</span><span class="pun">ã</span><span class="pln">o </span><span class="typ">Carlos</span><span class="pln"> </span><span class="typ">Fonseca</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">jcfonseca@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Thu</span><span class="pln"> </span><span class="typ">Jan</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">49</span><span class="pun">:</span><span class="lit">30</span><span class="pln"> </span><span class="lit">2012</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    alterando a div
+
+commit b6c7cc8e3fea9b255b5845e1114588206679f609
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Jo</span><span class="pun">ã</span><span class="pln">o </span><span class="typ">Carlos</span><span class="pln"> </span><span class="typ">Fonseca</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">jcfonseca@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Thu</span><span class="pln"> </span><span class="typ">Jan</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">48</span><span class="pun">:</span><span class="lit">38</span><span class="pln"> </span><span class="lit">2012</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    trocando de </span><span class="lit">1</span><span class="pln"> para I </span><span class="kwd">no</span><span class="pln"> title
+
+commit fe69c05c59e9775b19ecb02256c2ad1b50278037
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Jo</span><span class="pun">ã</span><span class="pln">o </span><span class="typ">Carlos</span><span class="pln"> </span><span class="typ">Fonseca</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">jcfonseca@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Thu</span><span class="pln"> </span><span class="typ">Jan</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">48</span><span class="pun">:</span><span class="lit">13</span><span class="pln"> </span><span class="lit">2012</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    colocando mensagem de copyright </span><span class="kwd">no</span><span class="pln"> rodap</span><span class="pun">é</span><span class="pln">
+
+commit </span><span class="lit">9ee6a2e5344ff14ba38461ab65f51927bc2d7096</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">41</span><span class="pun">:</span><span class="lit">33</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    troca de site para sistema </span><span class="kwd">no</span><span class="pln"> rodape
+
+commit </span><span class="lit">658ed785d5e5c933d6ccead69b5d1801dd52e331</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">41</span><span class="pun">:</span><span class="lit">12</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    troca de site para sistema </span><span class="kwd">no</span><span class="pln"> cabecalho
+
+commit </span><span class="lit">12ec2eb6cba5e1021e8ed609ac26188397dc8ed2</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">40</span><span class="pun">:</span><span class="lit">47</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    trocando de </span><span class="lit">1</span><span class="pln"> para um </span><span class="kwd">no</span><span class="pln"> title</span></code></pre>
+<p>O hash é a sequência de caracteres localizada à direita da palavra commit. No nosso caso, o hash do penúltimo commit é b6c7cc8e3fea9b255b5845e1114588206679f609. Portanto, se digitarmos o comando <code>git reset b6c7cc8e3fea9b255b5845e1114588206679f609</code>, o último commit será descartado, direcionando nosso HEAD para o penúltimo commit. Dessa maneira, as alterações encontradas no último commit são revertidas e aplicadas aos arquivos em nosso Working Directory. Isso pode ser visto a partir do log do nosso projeto:</p>
+<pre class="prettyprint"><code><span class="pln">commit b6c7cc8e3fea9b255b5845e1114588206679f609
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Jo</span><span class="pun">ã</span><span class="pln">o </span><span class="typ">Carlos</span><span class="pln"> </span><span class="typ">Fonseca</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">jcfonseca@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Thu</span><span class="pln"> </span><span class="typ">Jan</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">48</span><span class="pun">:</span><span class="lit">38</span><span class="pln"> </span><span class="lit">2012</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    trocando de </span><span class="lit">1</span><span class="pln"> para I </span><span class="kwd">no</span><span class="pln"> title
+
+commit fe69c05c59e9775b19ecb02256c2ad1b50278037
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Jo</span><span class="pun">ã</span><span class="pln">o </span><span class="typ">Carlos</span><span class="pln"> </span><span class="typ">Fonseca</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">jcfonseca@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Thu</span><span class="pln"> </span><span class="typ">Jan</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">48</span><span class="pun">:</span><span class="lit">13</span><span class="pln"> </span><span class="lit">2012</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    colocando mensagem de copyright </span><span class="kwd">no</span><span class="pln"> rodap</span><span class="pun">é</span><span class="pln">
+
+commit </span><span class="lit">9ee6a2e5344ff14ba38461ab65f51927bc2d7096</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">41</span><span class="pun">:</span><span class="lit">33</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    troca de site para sistema </span><span class="kwd">no</span><span class="pln"> rodape
+
+commit </span><span class="lit">658ed785d5e5c933d6ccead69b5d1801dd52e331</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">41</span><span class="pun">:</span><span class="lit">12</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    troca de site para sistema </span><span class="kwd">no</span><span class="pln"> cabecalho
+
+commit </span><span class="lit">12ec2eb6cba5e1021e8ed609ac26188397dc8ed2</span><span class="pln">
+</span><span class="typ">Author</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Maria</span><span class="pln"> </span><span class="typ">Soares</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">mmsoaresgit@gmail</span><span class="pun">.</span><span class="pln">com</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">Date</span><span class="pun">:</span><span class="pln">   </span><span class="typ">Fri</span><span class="pln"> </span><span class="typ">Dec</span><span class="pln"> </span><span class="lit">30</span><span class="pln"> </span><span class="lit">14</span><span class="pun">:</span><span class="lit">40</span><span class="pun">:</span><span class="lit">47</span><span class="pln"> </span><span class="lit">2011</span><span class="pln"> </span><span class="pun">-</span><span class="lit">0200</span><span class="pln">
+
+    trocando de </span><span class="lit">1</span><span class="pln"> para um </span><span class="kwd">no</span><span class="pln"> title</span></code></pre>
+<h1>Desfazendo commits antigos</h1>
+
+<p>Nem sempre bugs são encontrados logo após que foram criados, tendo vários commits realizados desde que o bug foi introduzido. O comando <code>git reset</code> permite desfazer qualquer número de commits, bastando utilizar o hash do commit que queremos manter como HEAD. Contudo, todos os commits que foram realizados após ele serão descartados, perdendo todas as novas funcionalidades. Por isso, o comando <code>git reset</code> só é recomendado quando desejamos desfazer poucos commits e, principalmente, se esses ainda não tiverem sido enviados a um repositório remoto. Se os commits já foram enviados, há alguma chance dos commits já terem sido adquiridos pelos outros desenvolvedores do projeto, e aí não será possível excluí-los. Então como descartamos as alterações do commit que gerou o bug neste caso?</p>
+<p>Quando desejamos remover commits que foram realizados há algum tempo, a melhor maneira seria revertendo-os, isto é, apenas desfazendo as alterações daqueles commits. Todos os outros commits serão mantidos em seu respectivo estado. Isso é feito utilizando o comando <code>git revert</code> passando como argumento o hash do commit que se deseja reverter. Ao digitar o comando, um novo commit revertendo as alterações do commit escolhido será realizado e o editor de texto padrão se abrirá para que se possa digitar a mensagem do commit. Para que o comando seja utilizado, é necessário que o Working Directory e o Index estejam "limpos", ou as alterações atuais serão descartadas.</p>
+<p>Uma boa alternativa para maior flexibilidade é a opção "-n", para que as alterações sejam revertidas e adicionadas ao nosso Working Directory e Index. Assim podemos fazer alterações adicionais antes de criar um novo commit de reversão.</p>
+<p><code>git revert -n [hash_do_commit]</code></p>
+<h1>Buscando por bugs em muitos commits</h1>
+
+<p>Quando conhecemos as alterações indesejadas, caso sejam poucas, é possível que façamos um novo commit com as alterações necessárias nos arquivos, desfazendo o que foi feito antes. Infelizmente, nem sempre temos um cenário tão simples, então precisamos utilizar um recurso mais avançado do Git.</p>
+<p>Imagine que após algum tempo, uma funcionalidade que estava correta, parou de funcionar subitamente em nosso projeto. Um link, que antes funcionava, parou de funcionar e não sabemos quando fizemos a alteração que causou esse problema. Sabemos, porém, uma data aproximada de quando funcionava, por exemplo na segunda-feira.</p>
+<p>Com o comando "git log", podemos encontrar o hash do primeiro commit daquele dia; é um bom ponto de partida. Vamos supor que, em nosso projeto, o primeiro commit da última segunda-feira é o "02bfc44...". Se desejarmos, podemos utilizar o comando <code>git checkout 02bfc44</code> e verificar se estava funcionando. Supondo que está, devemos voltar ao HEAD, com <code>git checkout HEAD</code>.</p>
+<p>Agora que estamos de volta ao HEAD, veremos quantos commits temos entre ele e o commit da segunda-feira que temos certeza que funciona:</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-01.png" alt=""></p>
+<p>Pronto, agora temos que testar commit a commit, ou seja, realizando um <code>git checkout</code> com o hash de cada commit. Imagine o trabalho e o tempo que isso tomará! Por isso, o Git nos fornece o comando <code>git bisect</code>. Vamos utilizá-lo e acompanhar seu funcionamento.</p>
+<pre class="prettyprint"><code><span class="pln">    git bisect start
+    git bisect bad HEAD</span></code></pre>
+<p>Acima, iniciamos uma sessão de "bisect" e marcamos o commit HEAD como "bad" (ruim), ou seja, indicamos que ele contém o bug o qual queremos encontrar o momento em que foi introduzido.</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-2.png" alt=""></p>
+<p>Agora precisamos marcar qual commit deve ser utilizado como estando OK:</p>
+<p><code>git bisect good 02bfc44</code></p>
+<p>Agora que o Git sabe qual commit funciona e qual não funciona, ele automaticamente faz o checkout de um commit intermediário para que possamos verificar se funciona. Por exemplo o commit c93e5da:</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-3.png" alt=""></p>
+<p>Podemos testar agora se, nesse ponto, nossa funcionalidade estava OK. Caso não esteja, precisamos marcar o commit atual como "ruim":</p>
+<p><code>git bisect bad</code></p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-4.png" alt=""></p>
+<p>Por dedução lógica, todos os commits posteriores ao atual também estão defeituosos. Agora o Git conhece um novo intervalo de commits para buscar pelo erro, com metade do tamanho do intervalo anterior:</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-5.png" alt=""></p>
+<p>Agora com esse novo cenário, o Git faz automaticamente o checkout de um commit intermediário desse novo intervalo, por exemplo o commit af654d1:</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-6.png" alt=""></p>
+<p>Novamente podemos testá-lo e verificar se ele contém o erro que procuramos. Digamos que esse commit está OK, então temos marca-lo como tal:</p>
+<p><code>git bisect good</code></p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-7.png" alt=""></p>
+<p>Utilizando o mesmo conceito de antes, o Git encontra um novo intervalo, sendo que agora temos o cenário inverso de antes: podemos procurar por commits posteriores ao atual.</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-8.png" alt=""></p>
+<p>Novamente, continuamos o bisect a partir do commit intermediário do novo intervalo, por exemplo o commit df83cc9:</p>
+<p></p>
+<p>Novamente, vamos testá-lo e, em nosso exemplo, constatamos que a funcionalidade não está OK. Vamos marcar o commit atual como "ruim":</p>
+<p><code>git bisect bad</code></p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-10.png" alt=""></p>
+<p>Seguindo o ciclo, temos um novo intervalo para continuar nossa busca pelo erro:</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-11.png" alt=""></p>
+<p>No nosso caso, como tínhamos um número pequeno de commits para verificar, encontramos o commit onde o bug foi inserido em nosso projeto. O bisect faz o checkout automático do commit defeituoso, mas a saída no prompt de comando agora traz novas informações sobre ele.</p>
+<p><img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git-bisect-12.png" alt=""></p>
+<p>Apesar de fazer checkout dos commits, o ciclo de bisect trabalha em uma branch exclusiva no repositório local. Portanto, para corrigir o erro, conhecemos o hash do commit e podemos utilizar os comandos <code>git reset</code>, <code>git revert</code> ou ver as alterações realizadas naquele commit específico com <code>git show bbd43c6</code> e decidir a melhor maneira de corrigir.</p>
+<p>Note que esse caso demonstra muito bem a importância de realizarmos pequenos commits, gravarmos pequenos avanços em nossos projetos, mesmo que em muitos commits, pois temos ferramentas para encontrar qualquer problema posteriormente de maneira automatizada.</p>
+
+						</div>
+					</section>
+					<button class="video-transcription-button transcription-toggle" aria-hidden="true" style="display: none;">
+						<span class="video-transcription-button-text">continuar lendo</span>
+					</button>
+				
+			</div>
+		</section>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-git/exercicio-controle-avancado-de-alteracoes/512/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;git&quot;,&quot;task-id&quot;:&quot;512&quot;,&quot;task-kind&quot;:&quot;Vídeo&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/git/task/512/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-139.361px);">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button openMenu-button--inactive"></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/git" title="Ir para página do curso">
+				<img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/git.svg" alt="ícone Git: Controle e compartilhe seu código" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Git: Controle e compartilhe seu código</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">65%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 65%, transparent 65%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>07</strong>
+				<span>de 10</span></span>
+			<h3 class="task-menu-section-title-text">
+				Controle avançado de alterações
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>1 de 11</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/git/task/512" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Controle avançado de alterações">
+							Controle avançado de alterações
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">15min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/514" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Descartando alterações no Working Directory">
+							Descartando alterações no Working Directory
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/23530" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade sem Resposta do Aluno não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Branch e arquivo com mesmo nome">
+							Branch e arquivo com mesmo nome
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/516" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Descartando alterações no index">
+							Descartando alterações no index
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/23540" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Múltipla Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Mais opções do git reset">
+							Mais opções do git reset
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/518" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Atalhos dos últimos commits">
+							Atalhos dos últimos commits
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/519" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Descartando alterações no HEAD">
+							Descartando alterações no HEAD
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/520" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Salvando alterações o estado do Working Directory e Index">
+							Salvando alterações o estado do Working Directory e Index
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/521" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Recuperando estados do git stash">
+							Recuperando estados do git stash
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/522" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Aplicando o estado do git stash sem removê-lo">
+							Aplicando o estado do git stash sem removê-lo
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/git/task/523" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Removendo estados do git stash">
+							Removendo estados do git stash
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/git/section/&#39;+this.value;">
+			
+				<option value="1">01. Introdução ao controle de versões com Git</option>
+			
+				<option value="2">02. O ciclo básico do Git</option>
+			
+				<option value="3">03. Sincronização dos dados com o repositório</option>
+			
+				<option value="4">04. Organização do trabalho com branches</option>
+			
+				<option value="5">05. Resolução de conflitos</option>
+			
+				<option value="6">06. Boas práticas no uso do Git</option>
+			
+				<option value="7" selected="">07. Controle avançado de alterações</option>
+			
+				<option value="8">08. Contribuição com opensource, técnicas avançadas e produtividade com o Git</option>
+			
+				<option value="9">09. Fazendo merges avançados com Cherry Pick</option>
+			
+				<option value="10">10. Usando Git através de interfaces visuais</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-git/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/sergio-vc" title="Ir para sua página de usuário">
+			<img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/2560030096a6b41234ec03f31f634205.png" alt="Gravatar de Sérgio Vieira " class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Sérgio Vieira </span>
+					<span class="task-menu-footer-detalhes-xp">
+						134.9k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+
+</section>
+
+
+
+
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.transferir" async=""></script>
+
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/markdownEditor.fc48dda6.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.transferir" async=""></script>
+
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.transferir" async=""></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/classPage.4d012740.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.transferir"></script>
+	
+	
+		<!-- video specific -->
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/scroll-top.e8169412.js.transferir"></script>
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video.00bc6850.js.transferir"></script>
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/vimeo.7a8597b8.js.transferir"></script>
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/videojs.ga.6de1a69f.js.transferir"></script>
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video-js-resolutions.73c60166.js.transferir"></script>
+		<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/video.573ffe46.js.transferir"></script>
+	
+
+	
+	
+	
+	
+
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/partitura.a7080c9c.js.transferir"></script>
+	<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.transferir"></script>
+
+
+
+	
+
+	
+		
+
+<script src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/customerio.eb5e9fba.js.transferir"></script>
+<script>
+    var tracker = new CustomerIO('fccd7e3d49531457b6b2');
+    tracker.identify('46497', 'sergio.vc@hotmail.com', '1471411732');
+</script>
+	
+
+	
+		
+
+<script type="text/javascript" src="./Git_ Aula 7 - Atividade 1 Controle avançado de alterações _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.transferir"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Sérgio Vieira ","email":"sergio.vc@hotmail.com"};
+		amplitudeIdentify("46497", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+			<script>
+				track({"section-id":"87","name":"section-started","course-code":"git"});
+			</script>
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"git","task-id":"512","task-kind":"Vídeo"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":53,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+<style type="text/css">.vjs-control.vjs-HD-button { color: #36D8DE; font-weight:bold; text-shadow: 0 0 1em #fff;}</style></body></html>

@@ -1,0 +1,7 @@
+===================
+--Git clone
+===================
+
+Exatamente! Ao realizarmos a clonagem, uma cópia de todo o repositório remoto 
+é criada em nossa máquina. Todos os arquivos, tags, histórico, branches e assim por 
+diante ficam disponíveis localmente na máquina do desenvolvedor.

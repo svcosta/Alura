@@ -1,0 +1,25 @@
+step by step work flow
+
+1 - create your branch
+    git branch ticket3055
+    add, commit push in your branch
+
+2- checkout master - git pull to update master
+     git checkout master
+     git pull 
+
+3 - checkout ticket3055
+    update your branch with rebase commit
+    git rebase master 
+
+4 -  merge your brach with master branch. osb: you so far you are in master branch.
+     git checkout master
+     git merge ticket3055 
+
+5- push in master branch   
+    git push
+
+
+
+in case of conflit on step 3 you can change your temporary branch so
+type the command git rebase --continue.

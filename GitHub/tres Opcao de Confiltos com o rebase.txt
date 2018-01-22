@@ -1,0 +1,3 @@
+--continue deve ser utilizado após a resolução manual de conflitos; 
+--skip faz com que suas alterações sejam descartadas; 
+--abort volta atrás em todo o processo de rebase

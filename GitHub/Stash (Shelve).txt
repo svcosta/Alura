@@ -1,0 +1,18 @@
+when you want to test something but you don't want to commit.
+you can make a stash (is bit similar a shelve in TSF) you saved
+your changes for continue in another moment.
+
+git stash
+
+to see what are into the stash you use the commit
+git stash list
+
+to contiune
+git stash pop : I will get the all last change
+git stash apply home.html : I will get the specific file.
+
+to delete
+you can use the command 
+git stash drop 
+
+the command above exclude the stash from git stash.

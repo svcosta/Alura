@@ -1,0 +1,2 @@
+A branch (no branch), que dá a entender que você não está em branch nenhuma, é apenas 
+temporária, criada pelo Git para que possamos resolver o conflito.
