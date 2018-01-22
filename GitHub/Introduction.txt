@@ -8,7 +8,7 @@ git blema css/index.css
 git clone
 
 password:
-Sergio@32
+
 =======================================
 -- Comando Clone
 =======================================
