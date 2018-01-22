@@ -1,0 +1,7 @@
+git cherry-pick 4
+
+the commad cherry-pick is very useful when you have a many commites but you don't want to send all them to master.
+Suppose you have done five changes, but everybody needs just the third change. you are able to send just it to 
+branch master using the command cherry-pick followed the number Id of branch:
+
+git cherry-pick 19f0bb7d8b4be8ecd687b48fca301b71b95eab41
