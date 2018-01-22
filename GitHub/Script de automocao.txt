@@ -1,0 +1,21 @@
+na pasta de usuario tem um arquvo chamdo .gitconfig
+nesse arquivo podemos crias os alias
+
+in the directory of user has the file called .gitconfig in this file we can create a alias for commands:
+[user]
+	email = sergio.@hotmail.com
+	name = svcosta
+	
+[push]
+	defaul =simple
+	
+
+[alias]
+	st = status
+	l = log --pretty=oneline
+	full = log --pretty=full
+	sergiolog = log --pretty='%an Realizou o commit %h: %s'
+	full2 = log -p
+	co = checkout
+	publish = !git checkout master && git pull && git checkout dev && git rebase master && git checkout master && git merge dev && git push
+	
