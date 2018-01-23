@@ -1,0 +1,21 @@
+Reflet.set
+
+
+let negociacaoController = new NegociacaoController();
+
+    let lista = new Proxy(new ListaNegociacoes(), {
+
+        set(target, prop, value, receiver) {
+            console.log(`A propriedade ${prop} receberá  ${value}`);
+            return Reflect.set(target, prop, value, receiver);
+        }
+    });
+
+
+declarar objetos com arrow function.
+
+var objeto = {
+    exibeMensagem  (){
+        console.log("Olá");
+    }
+};

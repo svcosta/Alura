@@ -1,0 +1,19 @@
+EmaScript 
+Ema 262
+Dinamicamente tipida.
+
+
+Nós não queremos que o botão tenha o comportamento padrão dele, ou seja, queremos prevenir o 
+comportamento padrão, para isso precisamos chamar a função event.preventDefault() no início da função 
+que estamos adicionando no botão:
+
+
+document.querySelector("#adicionar-paciente");
+pega um elemento do DOM
+
+document.querySelectorAll("table");
+pega todos os elementos do DOM.
+
+textContent = Pega o texto(string) do Dom
+
+innerHTTML = pega o formato html do DOM

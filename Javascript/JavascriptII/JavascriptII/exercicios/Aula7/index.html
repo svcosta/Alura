@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TITULO</h1>
+    <p>PARAGRAFO</p>
+    <div>DADOS</div>
+
+    <script>
+
+        debugger
+        console.log(this); // � window
+
+        // //funções convencionais no js tem this(contexto) difentes
+        // let exibeConteudo = function() {
+        //     console.log(this);
+        //     alert(this.textContent);
+        // };
+
+         // arrow function agora! Arrow function tem o contexto de onde foi criado.
+        let exibeConteudo = () =>  {
+            console.log(this);
+            alert(this.textContent);
+        };
+
+        $ = document.querySelector.bind(document);
+
+        $('h1').addEventListener('click', exibeConteudo);
+
+        $('p').addEventListener('click', exibeConteudo);
+
+        $('div').addEventListener('click', exibeConteudo);
+
+    </script>
+
+    <script src="relogio.js">
+        
+        </script>
+</body>
+</html>

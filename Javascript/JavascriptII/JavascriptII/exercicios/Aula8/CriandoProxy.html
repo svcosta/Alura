@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Criando Proxies</title>
+ 
+</head>
+<body class="container">
+    
+   
+
+<script type="text/javascript">
+
+//  let funcionario = {email: 'abc@abc.com'};
+
+// var proxy = new Proxy(funcionario, {
+
+//      set(targert, prop, value, receive){
+
+//         debugger
+//         console.log(`valor atuali da propriedade : ' + ${targert[prop]}`);        
+        
+//         return  Reflect.set(targert, prop, value, receive);       
+
+//     }
+// });
+
+// proxy.email = "sergio";
+
+
+//  var proxy = new Proxy(funcionario, {
+
+//      get(targert, prop, receive){
+
+//         debugger
+//         console.log(targert[prop]);
+//          console.log('emal foi acessada');
+        
+//         return '**' + Reflect.get(targert, prop, receive) + '**';       
+
+//     }
+// });
+
+
+ class Funcionario {
+
+    constructor(email) {
+        this._email = email;
+    }
+
+    get email() {
+         return this._email;
+    }
+
+    set email(email) {
+        this._email = email;
+    }
+}
+
+var proxy = new Proxy(new Funcionario('teste@hotmail.com'), {
+
+    set(target, prop, value, receive){
+        debugger
+        console.log(`nome da propriedade:${prop}`);
+        console.log(`valor da antigo:${target[prop]}`);
+        console.log(`novo valor:${value}`);
+
+        return Reflect.set(target, prop, value, receive);
+    }
+});
+
+proxy.email = 'sergio';
+
+// var proxy = new Proxy(new Funcionario('teste@hotmail.com'), {
+
+//     get(targert, prop, receive){
+//             debugger
+//            if(['email'].includes(prop) && typeof(targert[prop]) == typeof(Function)){
+//                 return function(){
+//                          console.log('Armadilha aqui...');
+//                 }
+//         }
+        
+//         return Reflect.get(targert, prop, receive); 
+//     }
+// });
+
+</script>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+Cuidado com o modelo anêmico
+Classes que não possuem metodos
+
+let: utlizada para criação de variais de escopo.
+
+
+Imutablidade do objeto
+
+Podemos "congelar" um objeto, significando que qualquer alteração em suas propriedades serão ignoradas. No caso da nossa classe Negociacao, isso faz todo sentido, porque nem mesmo os métodos da classe podem alterar as propriedades de uma negociação criada.
+
+Para isso, podemos usar o método Object.freeze. Modificando nossa classe.
+
+Get date js
+data.getDate()
+date add 10 dias
+data.getDate() + 10

@@ -1,0 +1,47 @@
+o contexto do this
+
+Esse erro acontece porque o this de uma função é dinâmico, ou seja, seu valor 
+muda de acordo com o contexto na qual é chamado. Quando a função passada como 
+parâmetro para o construtor de ListaNegociacoes é chamada, seu contexto de execução 
+passa a ser a instância de ListaNegociacoes. Sabemos que instâncias dessa classe não 
+possuem a propriedade this._negociacoesView, aliás, quem a possui é NegociacoesController.
+ Para que nosso código funcione, o this da função que passamos deve referenciar NegociacoesController.
+
+API Reflection e as facetas de this
+
+A boa notícia é que sendo this dinâmico, a própria linguagem JavaScript nos permite alterá-lo 
+quando invocamos uma função. O primeiro passo para seguirmos nessa linha, é fazer com que 
+ListaNegociacoes receba em seu construtor o contexto no qual queremos executar nossa função. 
+Com base nesse contexto usamos Reflect.apply na hora em que formos chamar nossa função armadilha:
+
+Veja que usamos Reflect.apply(this._armadilha, this._contexto, [this]). A classe Reflect existe no ES2015 
+e aglutina diversas funções que nos auxiliam em metaprogramação. Usamos a função Reflect.apply, que recebe 
+como primeiro parâmetro a função que queremos executar.
+
+
+Veja que usamos Reflect.apply(this._armadilha, this._contexto, [this]). A classe Reflect existe no ES2015 
+e aglutina diversas funções que nos auxiliam em metaprogramação. Usamos a função Reflect.apply, que recebe 
+como primeiro parâmetro a função que queremos executar.
+
+O segundo parâmetro é o contexto no qual queremos que ela seja executada, ou seja, 
+this._contexto passa a ser o this durante sua invocação. Veja que nossa função this._armadilha precisa 
+receber um parâmetro, que é a instância da classe ListaNegociacoes. É por isso que o terceiro parâmetro 
+é um array com todos os parâmetros que devem ser passados para a função que estamos invocando.
+
+
+
+
+Reflect.apply((nome)=> {alert('oi ' + nome);}, this,['sergio']);
+
+
+Arrow function e seu escopo léxico
+Apesar de funcional, podemos enxugar nosso código. Lembram das arrow functions? Além de ter uma sintaxe bem enxuta, 
+ela possui outra característica: seu this possui escopo léxico. Mas o que isso significa?
+
+Diferente das funções tradicionais, que possuem this dinâmico, as arrow functions possuem um this estático, isto é,
+ ele não muda de acordo com o contexto da chamada da função e mantém o this no momento de sua declaração.
+
+Quer dizer que nossa ListaNegociacoes não precisará receber o contexto como parâmetro? Exatamente. Vamos alterá-la, simplificando-a:
+
+Arrow função nao tem contexto dinamico. ela roda sempre no contexto que foi chamda.
+

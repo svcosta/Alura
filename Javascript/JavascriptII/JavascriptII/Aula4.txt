@@ -1,0 +1,44 @@
+podemos criar classes statis 
+
+
+class DateHelper{
+
+    static dataParaTexto(data){
+        return data.getDate() + '/'+ (data.getMonth()+1) + '/'+ data.getFullYear();
+    }
+
+    static textoParaData(anoMesDia){
+
+      return  new Date(...
+                    anoMesDia.split('-')
+                    .map((item,index)=>
+                        item - index % 2
+                    ));
+    }
+}
+
+
+Template Strings
+nada de concatenar.... o moda agora é templete String.
+
+
+Primeiro, precisamos saber que toda template string não usa aspas duplas ou aspas simples, mas uma crase em sua declaração
+ `${data.getDate()}/${(data.getMonth()+1)}/${data.getFullYear()}`
+
+
+Concats
+[].concat
+faz um joint entres os array
+
+function exibeNoConsole(lista) {
+    lista.forEach(item => console.log(item));
+}
+
+let listaDeNomes1 = ['Flávio', 'Rogers', 'Júlia'];
+let listaDeNomes2 = ['Vieira', 'Fernanda', 'Gerson'];
+let lista = listaDeNomes1.concat(listaDeNomes2);
+
+exibeNoConsole(lista);
+
+faz uma copia do array
+ return [].concat(this._negociacoes);

@@ -1,0 +1,63 @@
+Criado um framework de busca no DOM.
+ 
+let $ = document.querySelector.bind(document); 
+
+Spread operator
+
+Apesar de funcional, nosso código ainda é verboso quando pensamos na conversão da data. 
+Será que podemos passar o array de parâmetros direto para o construtor da nossa data? 
+Nenhum erro acontece, mas nossa data não é criada corretamente. Para que funcionasse, 
+de alguma forma o JavaScript precisaria entender que não é o array que está sendo passado 
+como parâmetro, mas cada item do array para cada parâmetro do construtor. A boa notícia 
+é que o ES2015 suporta o spread operator. Em português, spread significa "espalhar". 
+
+Arrow Functions
+Arrow Functions: deixando o código ainda menos verboso
+Excelente, mas podemos deixar nosso código ainda menos verboso através de arrow functions. 
+A palavra arrow, em português, significa flecha e uma arrow function utiliza => em sua declaração, 
+o que lembra uma flecha:
+
+expressao lamba
+
+
+var teste =()=>{alert('po');};
+var somar = (x,y)=>{return x+y;};
+undefined
+somar(10,30);
+40
+
+
+   let data = new Date(... this._inputData
+        .value.split('-')
+        .map((item, idx) =>{           
+            return item - idx %2;
+        }));
+       
+
+
+
+Mais de spread Sugerir melhoria
+Para consolidar nosso conhecimento, observe este código:
+let lista1 = ['banana', 'laranja', 'mamão'];
+let lista2 = ['caju', 'tangerina', 'abacaxi'];
+
+lista1.push(...lista2);
+
+
+let numeros = [3,2,11,20,8,7];
+cria um arry só com numero impars
+
+let numeros = [3,2,11,20,8,7];
+let novosNumeros = numeros.map((item)=> (item%2 +1 ) * item);
+console.log(novosNumeros);
+
+
+let numeros = [10, 30];
+console.log(somaDoisNumeros(numeros[0], numeros[1]));
+
+vira
+
+let numeros = [10, 30];
+console.log(somaDoisNumeros(...numeros));
+
+... passa o paramatros sem precisar quebrar o arry

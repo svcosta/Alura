@@ -1,0 +1,14 @@
+Declaração de variaveis acmaScript 6
+
+var tem o escopo global do arquivo
+
+var nome ='sergio';
+acesso de todo o arquivo js.
+
+let = tem escopo de bloco.
+
+for(let i =1; i<=100; i++)
+   {
+   }
+
+alert(i); //vai dar merda, porqeu está fora de escopo do bloco.

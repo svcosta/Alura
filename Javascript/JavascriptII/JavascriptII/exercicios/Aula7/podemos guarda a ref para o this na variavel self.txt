@@ -1,0 +1,17 @@
+class NegociacaoController {
+
+    constructor() {
+
+        // a variável self guarda uma referência para this, instância de NegociacaoController
+
+        let self = this;
+
+        // aqui usei uma function tradicional, mas poderia ser uma arrow function também
+
+        this._listaNegociacoes = new ListaNegociacoes(function(model) { 
+            self._negociacoesView.update(model);
+        });
+    }
+
+    // código posterior omitido
+}
