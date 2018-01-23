@@ -1,0 +1,2 @@
+git ls-remote 
+git remote show [remote]
