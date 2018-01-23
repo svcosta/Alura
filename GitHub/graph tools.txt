@@ -5,3 +5,18 @@ git mergetool --tool-help
 git mergetool -t nome_do_programa.
 
 git mergetool -t emerge
+
+
+
+git log --oneline --decorate --graph --all
+
+Here are some useful links related to Git:
+
+Tutorials
+•	https://www.atlassian.com/git/tutorials
+•	https://git-scm.com/book/en/v2
+
+Optional tools
+•	https://www.sourcetreeapp.com
+•	https://tortoisegit.org
+
