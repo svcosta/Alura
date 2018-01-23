@@ -25,3 +25,7 @@ Like for many other actions, it's highly recommended to start a "git pull" only 
 Learn More
 Check out the chapter Inspecting Remote Data in our free online book
 More frequently asked questions about Git & version control
+
+
+Good link
+https://codeahoy.com/2016/04/18/10-git-pull-vs-git-fetch-(and-stashing)/
