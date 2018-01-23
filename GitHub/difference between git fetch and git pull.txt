@@ -1,0 +1,27 @@
+What's the difference between git fetch and git pull?
+Before we talk about the differences between these two commands, let's stress their similarities: both are used to download new data from a remote repository.
+
+Downloading data is an essential step in your daily work - because the remote data you are looking at in your local repository is just a "snapshot". It's only as up-to-date as the last time you explicitly downloaded fresh data from the remote with "fetch" or "pull". It's vital to keep this fact in mind when inspecting remote branches and commits!
+
+Let's now look at the fine but important differences between "fetch" and "pull".
+
+Fetch
+$ git fetch origin
+git fetch really only downloads new data from a remote repository - but it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
+Due to it's "harmless" nature, you can rest assured: fetch will never manipulate, destroy, or screw up anything. This means you can never fetch often enough.
+
+TIP
+Auto-Fetching in Tower
+In case you are using the Tower Git client, you don't have to fetch manually all the time: Tower fetches for you background, regularly and automatically.
+
+Pull
+$ git pull origin master
+git pull, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly integrates it into your current working copy files. This has a couple of consequences:
+
+Since "git pull" tries to merge remote changes with your local ones, a so-called "merge conflict" can occur. Check out our in-depth tutorial on How to deal with merge conflicts for more information.
+Like for many other actions, it's highly recommended to start a "git pull" only with a clean working copy. This means that you should not have any uncommitted local changes before you pull. Use Git's Stash feature to save your local changes temporarily.
+
+
+Learn More
+Check out the chapter Inspecting Remote Data in our free online book
+More frequently asked questions about Git & version control
