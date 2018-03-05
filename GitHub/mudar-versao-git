@@ -1,0 +1,9 @@
+Navegando entre os commits
+Por exemplo, para voltar agora na primeira versão usamos o comando
+git log
+
+Além disso, observe que cada commit tem um hash para identificá-lo, em outras palavras,
+é por meio desses hashs que temos a capacidade de saber o
+que um determinado commit fez ou até mesmo navegar entre os commits!
+
+git checkout 631123e4d6276b49059a7ae96b1de86c928f71c2
