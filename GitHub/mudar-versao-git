@@ -7,3 +7,7 @@ Além disso, observe que cada commit tem um hash para identificá-lo, em outras 
 que um determinado commit fez ou até mesmo navegar entre os commits!
 
 git checkout 631123e4d6276b49059a7ae96b1de86c928f71c2
+
+
+voltar para a vesao corrente?
+git checkout master
